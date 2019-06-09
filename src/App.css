@@ -47,3 +47,10 @@ button {
   font-size: 12px;
   background: white;
 }
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 0;
+  color: blue;
+}

@@ -10,7 +10,7 @@ function Experience({ experience, index, changeToPast, deleteExperience }) {
       { experience.text }
      <div>
       <button onClick={() => changeToPast(index)}>Change to Past / Future </button>
-      <button onClick={() => deleteExperience(index)}>Delete Experience</button>
+      <button onClick={() => deleteExperience(index)}>X</button>
      </div>
     </div>
   )
@@ -104,6 +104,7 @@ function App() {
 
   return (
     <div className="app">
+      <h1>Social Scrapbook</h1>
       <div className="experiences-list">
         {experiences.map((experience, index) => (
           <Experience
