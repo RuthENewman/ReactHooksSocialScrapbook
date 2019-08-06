@@ -9,7 +9,8 @@ const Experience = ({ experience, index, changeToPast, deleteExperience }) => {
       className="experience_card"
       key={experience.id}
       >
-      { experience.text }
+      <div className="experience_details">
+      <h3 className="experience_details__title">{ experience.text }</h3>
      <div className="experience_media">{
        experience.media_type === 'image'
        ? <img src={experience.media_url} className="resize" alt="${experienceDataObject.name}" />
@@ -22,6 +23,7 @@ const Experience = ({ experience, index, changeToPast, deleteExperience }) => {
       >
       </iframe>
      }</div>
+     </div>
      <div className="experience_buttons">
       <button onClick={() => changeToPast(index)}>Change to Past / Future </button>
       <button onClick={() => deleteExperience(index)}>X</button>

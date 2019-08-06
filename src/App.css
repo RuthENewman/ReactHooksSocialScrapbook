@@ -134,18 +134,17 @@ body, html {
 }
 
 .experience_card {
-  max-width: 500px;
-  min-width: 100px;
-  max-width: 400px;
+  max-width: 600px;
+  min-width: 300px;
   border-style: solid;
   border-width: 2px;
   border-color: #16a085;
-  padding: 1%;
+  padding: 2%;
   margin-left: 4%;
   margin-top: 2%;
   margin-bottom: 2%;
-  min-height: 100px;
-  max-height: 400px;
+  min-height: 200px;
+  max-height: 800px;
   background-color: #E8F4F8;
   /* display: table; */
 }
@@ -163,20 +162,28 @@ body, html {
   margin-left: 1%;
 }
 
+.experience_details__title {
+  background-color: white;
+  padding: .5rem;
+  text-align: center;
+  margin: .3rem;
+}
+
 .experience_card img, .experience_card iframe {
   width: 100%;
   object-fit: contain;
   box-sizing: border-box;
+  padding: 3%;
 }
 
 img.resize {
-  max-width:300px;
-  max-height:150px;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 iframe.resize {
-  max-width: 300px;
-  max-height: 150px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 #add-button {
